@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 16px Roboto, Arial, Tahoma;
+    color: #ccc;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+    background: #111111;
+
+    .header-logo {
+        img {
+            width: 100px;
+        }
+
+
+    }
+}
+
+.header-menu {
+    text-align: right;
+    color: #FFF;
+    font-size: 2em;
+    margin: 40px 10px;
+    display: block;
+}
+
+.flex {
+    display: flex;
+
+    .flex-col1 {
+        flex-basis: 30%;
+
+    }
+
+    .flex-col2 {
+        flex-basis: 70%;
+        text-align: right;
+    }
+}
+
+.header-nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+
+    top: 100px;
+    background: #202020;
+    text-align: center;
+
+    ul {
+        list-style: none;
+
+        li {
+            display: block;
+
+            a {
+                color: #FFF;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+                margin: 10px 0;
+                display: block;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.header-btn {
+    background: #F00;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-btn:hover {
+    background: #FF4500;
+    box-shadow: 0 0 15px #000000;
+    transform: scale(1.1);
+}
+
+
+.show {
+    display: block !important;
+}
+
+.banner {
+    background: url("Galeria/steampunk\ -\ plano\ de\ fundo.jpg") no-repeat top center;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+
+}
+
+.banner .container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* Certifique-se de que o container tenha altura suficiente */
+}
+
+.banner .container1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.faixa {
+    font: 26px "comic-sans";
+    color: #FFF;
+    background: #000;
+    margin: 20px;
+    padding: 10px;
+    line-height: 40px;
+}
+
+p {
+    margin: 20px;
+    line-height: 30px;
+}
+
+.btn,
+button {
+    background: #F00;
+    color: #FFF;
+    text-decoration: none;
+    font: 20px "Arial", Roboto;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.center {
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+}
+
+main {
+    background-color: #202020;
+
+    section {
+        padding: 50px 0;
+    }
+
+    #personagens {
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr;
+            /* Alinha os itens um em cima do outro no mobile */
+
+            .col {
+                box-shadow: 0 0 2px white;
+                margin: 10px;
+                border-radius: 10px;
+                padding: 20px;
+                text-align: center;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        #personagens .grid-3 {
+            grid-template-columns: repeat(3, 33%);
+            /* Retorna ao layout original em telas maiores */
+        }
+    }
+
+}
+
+
+
+
+
+
+.flex-galeria {
+    .col {
+        padding: 10px;
+    }
+
+    img {
+        width: 100%;
+
+    }
+}
+
+.footer {
+    background-color: #202020;
+    padding: 20px 0;
+    color: #FFF;
+
+    img {
+        width: 100px;
+    }
+
+    .redes {
+        a {
+            color: #FFF;
+            font-size: 1.3em;
+            text-decoration: none;
+            margin: 15px;
+        }
+    }
+}
+
+input,
+textarea {
+    width: 100%;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    padding: 5px 0;
+}
+
+@media (min-width: 1000px) {
+
+    .container {
+        width: 1000px;
+
+    }
+
+    .header {
+        border-bottom: 2px solid red;
+        background-color: #202020;
+
+        .header-menu {
+            display: none;
+        }
+
+        .header-nav {
+            display: block;
+            position: relative;
+            top: 0px;
+            text-align: right;
+
+            ul {
+                li {
+                    display: inline-block;
+                    padding: 15px;
+
+                    a {
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    a:hover {
+                        color: rgba(53, 250, 35, 0.705);
+                        text-shadow: 0 0 10px rgba(0, 0, 0, 0.856), 0 0 20px #000000e5, 0 0 30px #000000dc;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+        .header-btn:hover {
+            background: #FFF;
+            color: #000;
+        }
+    }
+}
+
+
+.flex {
+
+    .flex-col1 {
+        flex-basis: 40%;
+    }
+
+    .flex-col2 {
+        flex-basis: 60%;
+
+    }
+}
+
+
+.banner {
+    height: 800px;
+
+    .container {
+        width: 700px;
+
+        img {
+            align-items: center;
+            margin: auto;
+            display: block;
+        }
+    }
+}
+
+main {
+    span {
+        border-radius: 5px;
+    }
+
+    hr {
+        margin-top: 90px;
+    }
+
+    p {
+        font-size: 1.3em;
+
+    }
+
+    .flex {
+        display: flex;
+
+        .col {
+            flex-basis: 50%;
+            align-content: center;
+        }
+    }
+}
+
+
+
+.footer {
+    background-color: #111111;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+    padding: 10px 0;
+
+    img {
+        width: 50px;
+
+        background-color: #111111;
+    }
+
+    a {
+        color: #ccc;
+        font-size: 1.5em;
+        margin: 20px;
+        text-decoration: none;
+
+    }
+
+    a:hover {
+        color: white;
+    }
+
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+
+    .col {
+        padding: 10px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px;
+        /* Ajuste o padding para caber melhor em telas menores */
+    }
+
+    .header-menu {
+        font-size: 1.5em;
+        /* Reduz o tamanho da fonte no menu */
+    }
+
+    .container1 {
+        iframe {
+            width: 400px;
+            height: 250px;
+        }
+    }
+
+}
