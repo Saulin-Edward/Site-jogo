@@ -1,8 +1,5 @@
 <!DOCTYPE <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
 
 <head>
@@ -21,7 +18,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo contato.css">
 
 
     <link rel="shortcut icon" href="galeria/ampulheta_pixel_art.png">
@@ -29,8 +26,105 @@
 
 <body>
 
+    <header class="header">
+        <div class="container">
+            <div class="flex">
+                <div class="flex-col1">
+                    <a href="site jogo - home.html" title="Home" class="header-logo">
+                        <img src="galeria/Beyond Timeline LOGO.png" alt="Beyond Timeline">
+                    </a>
+                </div>
+                <div class="flex-col2">
+                    <a href="#" onclick="mostrarMenu()" class="header-menu">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <nav class="header-nav">
+                        <ul>
+                            <li>
+                                <a href="site jogo - home.html" title="Home">Home</a>
+                            </li>
+                            <li>
+                                <a href="site jogo - home.html" title="Historia">Historia</a>
+                            </li>
+                            <li>
+                                <a href="index.html" title="Galeria">Galeria</a>
+                            </li>
+                            <li>
+                                <a href="contato.html" title="Contato">Contato</a>
+                            </li>
+                            <li>
+                                <a href="jogar.html" title="Jogar" class="header-btn">Jogar</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="contato">
+            <div class="container">
+                <h2> Entre em contato</h2>
+                <form action="#" method="post" class="form-contato"
+                    style="margin-top: 1px; margin-bottom: 20px; width: 100%;">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required
+                            style="width: 100%;">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required
+                            style="width: 100%;">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="5" required
+                            style="width: 100%;"></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container center">
+            <p>
+                <img src="galeria/ampulheta_pixel_art.png" alt="Irmãos Piologo">
+
+                <hr>
+            <p>
+                <a href="http://facebook.com" title="facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="http://youtube.com" title="Youtube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="http://instagram.com" title="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+
+            </p>
+            <p>
+                Desenvolvido por Saulo Eduardo de Souza
+            </p>
+        </div>
+    </footer>
+
+
+    <script>
+        mostrarMenu = function () {
+            document.querySelector(".header-nav").classList.toggle("show");
+        }
+    </script>
+
 
     <script src="" async defer></script>
 </body>
 
-</html>>
+</html>
