@@ -835,7 +835,7 @@
 					"world": {
 						"x": 416.1064723901601,
 						"y": 139.10349314806268,
-						"width": 62.56698256421731,
+						"width": 62.56698256421732,
 						"height": 83.52137338062309,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -927,9 +927,9 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 463.5459188382876,
+						"x": 463.7167476348106,
 						"y": 16.670632790160525,
-						"width": 672.7824576849505,
+						"width": 673.1241152779965,
 						"height": 28.604898566270066,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -977,7 +977,7 @@
 						"x": 879.2911376400577,
 						"y": 32.174727852017966,
 						"width": 158.2303536296302,
-						"height": 63.06920439422447,
+						"height": 63.06920439422448,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1025,6 +1025,143 @@
 						"y": 97.07527562943326,
 						"width": 20.697458348118687,
 						"height": 76.731412534772,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "porco_patrulheiro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "run",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 25,
+					"sid": 774019837584939,
+					"tags": "",
+					"instanceVariables": {
+						"direcao": "Direita"
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 70,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 774019837584939,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 225.9968972641069,
+						"y": 136.53500500517976,
+						"width": 21,
+						"height": 17,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sensorPatru_direita",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 26,
+					"sid": 801042272618242,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 801042272618242,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 131.1029535162462,
+						"y": 147.79130652084322,
+						"width": 7.347315733753376,
+						"height": 28.04458828070767,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sensorPatru_esquerda",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 27,
+					"sid": 647318548485256,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 647318548485256,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 359.6020453235651,
+						"y": 147.79150595583226,
+						"width": 7.027107245413319,
+						"height": 28.04458828070767,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

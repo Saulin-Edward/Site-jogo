@@ -245,6 +245,136 @@
 				}
 			],
 			"sid": 898992892616851
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Inimigos",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "porco_patrulheiro",
+							"sid": 979683904319842,
+							"parameters": {
+								"instance-variable": "direcao",
+								"comparison": 0,
+								"value": "\"Direita\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "porco_patrulheiro",
+							"sid": 607351528062146,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "porco_patrulheiro",
+							"sid": 147525042886956,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 534847581842096
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "porco_patrulheiro",
+							"sid": 189153702629965,
+							"parameters": {
+								"instance-variable": "direcao",
+								"comparison": 0,
+								"value": "\"Esquerda\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "porco_patrulheiro",
+							"sid": 982268973125885,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "porco_patrulheiro",
+							"sid": 403132251840489,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 347703680467209
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "porco_patrulheiro",
+							"sid": 927640108126139,
+							"parameters": {
+								"object": "sensorPatru_esquerda"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "porco_patrulheiro",
+							"sid": 862788314085490,
+							"parameters": {
+								"instance-variable": "direcao",
+								"value": "\"Esquerda\""
+							}
+						}
+					],
+					"sid": 918172744070584
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "porco_patrulheiro",
+							"sid": 147650163846271,
+							"parameters": {
+								"object": "sensorPatru_direita"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "porco_patrulheiro",
+							"sid": 809732695726386,
+							"parameters": {
+								"instance-variable": "direcao",
+								"value": "\"Direita\""
+							}
+						}
+					],
+					"sid": 292051905230133
+				}
+			],
+			"sid": 372404254116853
 		}
 	],
 	"sid": 959958216613832

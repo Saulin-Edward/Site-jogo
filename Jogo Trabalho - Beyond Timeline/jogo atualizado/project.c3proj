@@ -61,7 +61,10 @@
 			"Sprite6",
 			"jogador",
 			"Sprite7",
-			"Keyboard"
+			"Keyboard",
+			"porco_patrulheiro",
+			"sensorPatru_direita",
+			"sensorPatru_esquerda"
 		],
 		"subfolders": []
 	},
