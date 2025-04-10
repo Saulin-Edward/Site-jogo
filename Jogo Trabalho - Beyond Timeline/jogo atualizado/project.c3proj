@@ -29,6 +29,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
 			"author": "Scirra",
@@ -64,7 +71,10 @@
 			"Keyboard",
 			"porco_patrulheiro",
 			"sensorPatru_direita",
-			"sensorPatru_esquerda"
+			"sensorPatru_esquerda",
+			"porco_canhao",
+			"canhao",
+			"bala"
 		],
 		"subfolders": []
 	},

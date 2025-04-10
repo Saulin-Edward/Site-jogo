@@ -372,6 +372,166 @@
 						}
 					],
 					"sid": 292051905230133
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "jogador",
+							"sid": 922149385558425,
+							"parameters": {
+								"object": "porco_patrulheiro"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "jogador",
+							"sid": 606842624894940,
+							"parameters": {
+								"animation": "\"atack\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "porco_patrulheiro",
+							"sid": 706737136073661,
+							"parameters": {
+								"animation": "\"die\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "porco_patrulheiro",
+							"sid": 482272534002298,
+							"behaviorType": "Solid",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "porco_patrulheiro",
+							"sid": 144028202557361,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 816493656040279
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "porco_patrulheiro",
+							"sid": 515829056159391,
+							"parameters": {
+								"animation": "\"die\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "flash",
+							"objectClass": "porco_patrulheiro",
+							"sid": 676551068266571,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 193323294198046,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "porco_patrulheiro",
+							"sid": 351654845017544
+						}
+					],
+					"sid": 887440731177334
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "jogador",
+							"sid": 766505338830605,
+							"parameters": {
+								"object": "porco_patrulheiro"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "jogador",
+							"sid": 817451840999695,
+							"parameters": {
+								"animation": "\"atack\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "porco_patrulheiro",
+							"sid": 348698538398500,
+							"parameters": {
+								"animation": "\"die\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "jogador",
+							"sid": 980322258868600,
+							"parameters": {
+								"animation": "\"hit\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 250216031675643
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "jogador",
+							"sid": 767046467508285,
+							"parameters": {
+								"animation": "\"hit\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "jogador",
+							"sid": 742560339645008,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 331957860918021
 				}
 			],
 			"sid": 372404254116853

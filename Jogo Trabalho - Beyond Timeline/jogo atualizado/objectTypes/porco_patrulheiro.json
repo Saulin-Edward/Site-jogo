@@ -18,6 +18,16 @@
 			"behaviorId": "Platform",
 			"name": "Platform",
 			"sid": 923560571288645
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 771531817601426
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 284850887370097
 		}
 	],
 	"effectTypes": [],
