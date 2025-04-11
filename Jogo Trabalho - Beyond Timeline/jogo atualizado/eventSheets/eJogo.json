@@ -15,6 +15,31 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 790680736219593
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 201217276787700,
+					"parameters": {
+						"audio-file": "Trilha Sonora",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 959784026278827
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 620662194398054
@@ -48,6 +73,18 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 177989011098604,
+					"parameters": {
+						"audio-file": "Perdeu - Morreu",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
 				{
 					"id": "restart-layout",
 					"objectClass": "System",
@@ -157,6 +194,18 @@
 							"behaviorType": "Platform",
 							"parameters": {
 								"control": "jump"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 841684969516607,
+							"parameters": {
+								"audio-file": "Pulo",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -301,6 +350,18 @@
 							"parameters": {
 								"animation": "\"atack\"",
 								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 554665957155487,
+							"parameters": {
+								"audio-file": "Golpe Martelo",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -524,6 +585,18 @@
 							"id": "destroy",
 							"objectClass": "porco_patrulheiro",
 							"sid": 351654845017544
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 264133912025507,
+							"parameters": {
+								"audio-file": "Dano inimigo",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 887440731177334
@@ -575,6 +648,18 @@
 							"parameters": {
 								"variable": "vidas",
 								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 807852069141537,
+							"parameters": {
+								"audio-file": "Dano Jogador",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -710,6 +795,18 @@
 							"parameters": {
 								"variable": "vidas",
 								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 963294453116435,
+							"parameters": {
+								"audio-file": "Dano Jogador",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -885,6 +982,18 @@
 							"parameters": {
 								"state": "enabled"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 930701391600989,
+							"parameters": {
+								"audio-file": "Dano inimigo",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 747471765434585
@@ -902,6 +1011,18 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 580881660443222,
+							"parameters": {
+								"audio-file": "Item Coletado",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
 						{
 							"id": "destroy",
 							"objectClass": "Sprite",
@@ -1067,6 +1188,18 @@
 							"id": "destroy",
 							"objectClass": "chefao",
 							"sid": 702307709893494
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 953928402024657,
+							"parameters": {
+								"audio-file": "Dano inimigo",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 894761078730067
@@ -1164,6 +1297,18 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 697750830046401,
+					"parameters": {
+						"audio-file": "Item Coletado",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
 				{
 					"id": "destroy",
 					"objectClass": "bomba",
@@ -1382,6 +1527,18 @@
 					}
 				},
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 646822946829882,
+					"parameters": {
+						"audio-file": "Dano Jogador",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-animation",
 					"objectClass": "jogador",
 					"sid": 148782456999771,
@@ -1541,6 +1698,18 @@
 					}
 				},
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 107233580423546,
+					"parameters": {
+						"audio-file": "Explosao Bomba",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-animation",
 					"objectClass": "bomba",
 					"sid": 608323933708839,
@@ -1551,6 +1720,124 @@
 				}
 			],
 			"sid": 431751011184196
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "jogador",
+					"sid": 825769195963213,
+					"parameters": {
+						"object": "porta"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "porta",
+					"sid": 156545690638668,
+					"parameters": {
+						"animation": "\"Abrindo\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 462209841744143
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "porta",
+					"sid": 771062332358121,
+					"parameters": {
+						"animation": "\"Abrindo\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "jogador",
+					"sid": 705531462388478,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "jogador",
+					"sid": 383061905142442,
+					"parameters": {
+						"animation": "\"porta\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 125789667920390,
+					"parameters": {
+						"seconds": "2.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "porta",
+					"sid": 709258638484375,
+					"parameters": {
+						"animation": "\"Fechando\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "black_blackground",
+					"sid": 226430023661408,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "jogador_dialogo",
+					"sid": 459550909369018,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpriteFont",
+					"sid": 202280303043475,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SpriteFont",
+					"sid": 803233861432453,
+					"parameters": {
+						"text": "\"Agora sim, quero ver quem vai me parar\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "porta",
+					"sid": 821541507199897,
+					"parameters": {
+						"animation": "\"Fechando\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 304429376367869
 		}
 	],
 	"sid": 959958216613832

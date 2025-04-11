@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
@@ -111,7 +118,8 @@
 			"SpriteFont",
 			"Sprite",
 			"bomba",
-			"chefao"
+			"chefao",
+			"Audio"
 		],
 		"subfolders": []
 	},
@@ -139,11 +147,77 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "Dano inimigo.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 675446664219894,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Dano Jogador.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 267764104544086,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Explosao Bomba.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 438296752439917,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Golpe Martelo.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 313624877935773,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Item Coletado.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 958722681535746,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Perdeu - Morreu.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 511812501694298,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Pulo.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 749979908669169,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "Trilha Sonora.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 979442942719544,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {

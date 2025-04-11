@@ -10,6 +10,11 @@
 			"behaviorId": "Platform",
 			"name": "Platform",
 			"sid": 164073853529565
+		},
+		{
+			"behaviorId": "destroy",
+			"name": "DestroyOutsideLayout",
+			"sid": 301822960783420
 		}
 	],
 	"effectTypes": [],
