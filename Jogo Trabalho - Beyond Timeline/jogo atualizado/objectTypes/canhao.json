@@ -14,14 +14,21 @@
 					{
 						"width": 26,
 						"height": 20,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0.46153846153846156,
+						"originY": 0.65,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
 						"imageSpriteId": 4283420,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.7391304347826086,
+								"y": 0.42857142857142855
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					}
@@ -47,6 +54,13 @@
 						"fileType": "image/png",
 						"imageSpriteId": 6366325,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.7391304347826086,
+								"y": 0.42857142857142855
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					},
@@ -61,6 +75,13 @@
 						"fileType": "image/png",
 						"imageSpriteId": 2918794,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.7391304347826086,
+								"y": 0.42857142857142855
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					},
@@ -75,6 +96,13 @@
 						"fileType": "image/png",
 						"imageSpriteId": 3674001,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.7391304347826086,
+								"y": 0.42857142857142855
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					},
@@ -89,6 +117,13 @@
 						"fileType": "image/png",
 						"imageSpriteId": 4525050,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.7391304347826086,
+								"y": 0.42857142857142855
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					},
@@ -103,6 +138,13 @@
 						"fileType": "image/png",
 						"imageSpriteId": 7803117,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.7391304347826086,
+								"y": 0.42857142857142855
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					}

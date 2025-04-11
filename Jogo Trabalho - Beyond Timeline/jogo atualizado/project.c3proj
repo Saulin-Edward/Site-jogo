@@ -22,8 +22,22 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Tilemap",
 			"name": "Tilemap",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -38,6 +52,20 @@
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destroy outside layout",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -59,22 +87,31 @@
 	"uniqueId": "gbp0pxd5pes",
 	"objectTypes": {
 		"items": [
-			"Tilemap5",
-			"Sprite",
+			"tilemap",
+			"janela",
 			"Sprite2",
-			"Sprite3",
-			"Sprite4",
-			"Sprite5",
-			"Sprite6",
+			"plataforma",
+			"bau",
+			"caixa",
+			"porta",
 			"jogador",
-			"Sprite7",
+			"chao",
 			"Keyboard",
 			"porco_patrulheiro",
 			"sensorPatru_direita",
 			"sensorPatru_esquerda",
 			"porco_canhao",
 			"canhao",
-			"bala"
+			"bala",
+			"sensorCanhao",
+			"vida_hud",
+			"itens_hud",
+			"black_blackground",
+			"jogador_dialogo",
+			"SpriteFont",
+			"Sprite",
+			"bomba",
+			"chefao"
 		],
 		"subfolders": []
 	},

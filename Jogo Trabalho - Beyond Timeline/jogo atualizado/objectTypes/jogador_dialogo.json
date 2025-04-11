@@ -1,0 +1,70 @@
+{
+	"name": "jogador_dialogo",
+	"plugin-id": "Sprite",
+	"sid": 652617881391128,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 21,
+						"height": 22,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2615246,
+						"collisionPoly": {
+							"points": [
+								0.14285714285714285,
+								0.045454545454545456,
+								0.8571428571428571,
+								0.045454545454545456,
+								0.9047619047619048,
+								0.09090909090909091,
+								0.9523809523809523,
+								0.3181818181818182,
+								0.9523809523809523,
+								0.45454545454545453,
+								0.9047619047619048,
+								0.9090909090909091,
+								0.8571428571428571,
+								0.9545454545454546,
+								0.38095238095238093,
+								0.9545454545454546,
+								0.2857142857142857,
+								0.9090909090909091,
+								0.09523809523809523,
+								0.7272727272727273,
+								0.047619047619047616,
+								0.45454545454545453,
+								0.047619047619047616,
+								0.3181818181818182,
+								0.09523809523809523,
+								0.09090909090909091
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 593919722347014,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

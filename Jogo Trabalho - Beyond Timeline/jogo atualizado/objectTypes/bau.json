@@ -1,7 +1,7 @@
 {
-	"name": "Sprite7",
+	"name": "bau",
 	"plugin-id": "Sprite",
-	"sid": 557647863177310,
+	"sid": 281918119364773,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -9,7 +9,12 @@
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 489363579143650
+			"sid": 701150740457110
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 645984843457931
 		}
 	],
 	"effectTypes": [],
@@ -18,21 +23,21 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 145,
+						"height": 110,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6149752,
+						"imageSpriteId": 9401919,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 687563276296365,
+				"sid": 871758809349140,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

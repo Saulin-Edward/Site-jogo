@@ -1,48 +1,32 @@
 {
-	"name": "bala",
+	"name": "black_blackground",
 	"plugin-id": "Sprite",
-	"sid": 703587577446513,
+	"sid": 538944754921900,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Bullet",
-			"name": "Bullet",
-			"sid": 296251103743144
-		},
-		{
-			"behaviorId": "destroy",
-			"name": "DestroyOutsideLayout",
-			"sid": 567458134580829
-		},
-		{
-			"behaviorId": "Rotate",
-			"name": "Rotate",
-			"sid": 491035398499484
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 14,
-						"height": 14,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7780513,
+						"imageSpriteId": 5379872,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 535863394241551,
+				"sid": 884554554882764,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
