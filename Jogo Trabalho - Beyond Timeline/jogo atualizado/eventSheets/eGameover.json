@@ -1,0 +1,48 @@
+{
+	"name": "eGameover",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "btnTryAgain",
+					"sid": 819660645457816
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 242136545629585,
+					"parameters": {
+						"layout": "fase1"
+					}
+				}
+			],
+			"sid": 563206625536392
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "btnmenu",
+					"sid": 243427779754207
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 920108335159630,
+					"parameters": {
+						"layout": "menu"
+					}
+				}
+			],
+			"sid": 360099396442246
+		}
+	],
+	"sid": 341423785361014
+}

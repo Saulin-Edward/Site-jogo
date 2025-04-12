@@ -1624,23 +1624,31 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 555094255267945,
+					"sid": 468873120254045,
 					"parameters": {
-						"seconds": "2.0",
+						"seconds": "0.5",
 						"use-timescale": true
 					}
 				},
 				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 239062312011830
-				},
-				{
 					"id": "reset-global-variables",
 					"objectClass": "System",
-					"sid": 436167380874923,
+					"sid": 939689954149151,
 					"parameters": {
 						"reset-static": false
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 352173188655679
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 621598282700105,
+					"parameters": {
+						"layout": "GameOver"
 					}
 				}
 			],

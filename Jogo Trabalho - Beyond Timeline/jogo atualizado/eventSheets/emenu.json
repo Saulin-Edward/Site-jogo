@@ -14,9 +14,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 117723972460470,
+					"sid": 325133511165751,
 					"parameters": {
-						"layout": "fase2"
+						"layout": "fase1"
 					}
 				}
 			],

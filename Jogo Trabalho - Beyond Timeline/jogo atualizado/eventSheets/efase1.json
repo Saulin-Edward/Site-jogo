@@ -2,19 +2,29 @@
 	"name": "efase1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "vidas2",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 232176764460717
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
-					"sid": 253732817412094
+					"sid": 914115089743667
 				}
 			],
 			"actions": [
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 230635334923970,
+					"sid": 455525102648948,
 					"parameters": {
 						"audio-file": "Trilha Sonora",
 						"loop": "looping",
@@ -24,7 +34,7 @@
 					}
 				}
 			],
-			"sid": 420095675473288
+			"sid": 508406843766851
 		},
 		{
 			"eventType": "block",
@@ -32,21 +42,21 @@
 				{
 					"id": "every-tick",
 					"objectClass": "System",
-					"sid": 613477394090157
+					"sid": 200507576862114
 				}
 			],
 			"actions": [
 				{
 					"id": "set-animation",
 					"objectClass": "vida_hud",
-					"sid": 422327563853173,
+					"sid": 246799250563575,
 					"parameters": {
 						"animation": "\"\"&vidas",
 						"from": "beginning"
 					}
 				}
 			],
-			"sid": 498196567335377
+			"sid": 713834740329530
 		},
 		{
 			"eventType": "block",
@@ -54,7 +64,7 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 377101281381194,
+					"sid": 500066547205878,
 					"parameters": {
 						"variable": "vidas",
 						"comparison": 2,
@@ -66,7 +76,7 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 991166809399645,
+					"sid": 503172954865820,
 					"parameters": {
 						"audio-file": "Perdeu - Morreu",
 						"loop": "not-looping",
@@ -78,18 +88,18 @@
 				{
 					"id": "restart-layout",
 					"objectClass": "System",
-					"sid": 974322545379143
+					"sid": 248251093302846
 				},
 				{
 					"id": "reset-global-variables",
 					"objectClass": "System",
-					"sid": 927339249852770,
+					"sid": 320766635676956,
 					"parameters": {
 						"reset-static": false
 					}
 				}
 			],
-			"sid": 859607939852579
+			"sid": 628335998257992
 		},
 		{
 			"eventType": "group",
@@ -104,7 +114,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-							"sid": 404336766549019,
+							"sid": 918066166271184,
 							"parameters": {
 								"key": 68
 							}
@@ -114,7 +124,7 @@
 						{
 							"id": "simulate-control",
 							"objectClass": "jogador",
-							"sid": 705438303615370,
+							"sid": 463138624593957,
 							"behaviorType": "Platform",
 							"parameters": {
 								"control": "right"
@@ -123,13 +133,13 @@
 						{
 							"id": "set-mirrored",
 							"objectClass": "jogador",
-							"sid": 777427783781752,
+							"sid": 585129287333744,
 							"parameters": {
 								"state": "not-mirrored"
 							}
 						}
 					],
-					"sid": 801675200727803
+					"sid": 818468777077129
 				},
 				{
 					"eventType": "block",
@@ -137,7 +147,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-							"sid": 503539116316976,
+							"sid": 651347198420595,
 							"parameters": {
 								"key": 65
 							}
@@ -147,7 +157,7 @@
 						{
 							"id": "simulate-control",
 							"objectClass": "jogador",
-							"sid": 387111818318706,
+							"sid": 720896575709168,
 							"behaviorType": "Platform",
 							"parameters": {
 								"control": "left"
@@ -156,13 +166,13 @@
 						{
 							"id": "set-mirrored",
 							"objectClass": "jogador",
-							"sid": 936866484278649,
+							"sid": 174922851453749,
 							"parameters": {
 								"state": "mirrored"
 							}
 						}
 					],
-					"sid": 142814300296154
+					"sid": 921155970082482
 				},
 				{
 					"eventType": "block",
@@ -170,7 +180,7 @@
 						{
 							"id": "on-key-pressed",
 							"objectClass": "Keyboard",
-							"sid": 550771097739936,
+							"sid": 522805596530424,
 							"parameters": {
 								"key": 87
 							}
@@ -180,7 +190,7 @@
 						{
 							"id": "simulate-control",
 							"objectClass": "jogador",
-							"sid": 307766176843355,
+							"sid": 580090623515102,
 							"behaviorType": "Platform",
 							"parameters": {
 								"control": "jump"
@@ -189,7 +199,7 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 620636389068226,
+							"sid": 781113760500495,
 							"parameters": {
 								"audio-file": "Pulo",
 								"loop": "not-looping",
@@ -199,7 +209,7 @@
 							}
 						}
 					],
-					"sid": 397009007954648
+					"sid": 711492292008939
 				},
 				{
 					"eventType": "block",
@@ -207,7 +217,7 @@
 						{
 							"id": "is-moving",
 							"objectClass": "jogador",
-							"sid": 254439812211977,
+							"sid": 440202429933465,
 							"behaviorType": "Platform"
 						}
 					],
@@ -215,14 +225,14 @@
 						{
 							"id": "set-animation",
 							"objectClass": "jogador",
-							"sid": 453321437356546,
+							"sid": 158982755986960,
 							"parameters": {
 								"animation": "\"run\"",
 								"from": "beginning"
 							}
 						}
 					],
-					"sid": 873114900433908
+					"sid": 678230500864445
 				},
 				{
 					"eventType": "block",
@@ -230,7 +240,7 @@
 						{
 							"id": "on-stopped",
 							"objectClass": "jogador",
-							"sid": 161403951839681,
+							"sid": 145001093500740,
 							"behaviorType": "Platform"
 						}
 					],
@@ -238,14 +248,14 @@
 						{
 							"id": "set-animation",
 							"objectClass": "jogador",
-							"sid": 168833489152332,
+							"sid": 161366783597881,
 							"parameters": {
 								"animation": "\"idle\"",
 								"from": "beginning"
 							}
 						}
 					],
-					"sid": 812215604447670
+					"sid": 796064685771766
 				},
 				{
 					"eventType": "block",
@@ -253,7 +263,7 @@
 						{
 							"id": "is-jumping",
 							"objectClass": "jogador",
-							"sid": 539723358130583,
+							"sid": 389993348172125,
 							"behaviorType": "Platform"
 						}
 					],
@@ -261,14 +271,14 @@
 						{
 							"id": "set-animation",
 							"objectClass": "jogador",
-							"sid": 729070605803495,
+							"sid": 669293348657701,
 							"parameters": {
 								"animation": "\"jump\"",
 								"from": "beginning"
 							}
 						}
 					],
-					"sid": 633752333046851
+					"sid": 735968198287657
 				},
 				{
 					"eventType": "block",
@@ -276,12 +286,12 @@
 						{
 							"id": "on-landed",
 							"objectClass": "jogador",
-							"sid": 912203767337489,
+							"sid": 396117881479787,
 							"behaviorType": "Platform"
 						}
 					],
 					"actions": [],
-					"sid": 483951822400432,
+					"sid": 131107476762139,
 					"children": [
 						{
 							"eventType": "block",
@@ -289,12 +299,12 @@
 								{
 									"id": "is-moving",
 									"objectClass": "jogador",
-									"sid": 460205271128172,
+									"sid": 162405228161914,
 									"behaviorType": "Platform"
 								}
 							],
 							"actions": [],
-							"sid": 904449809082078
+							"sid": 184596579061708
 						},
 						{
 							"eventType": "block",
@@ -302,21 +312,21 @@
 								{
 									"id": "else",
 									"objectClass": "System",
-									"sid": 584728885875191
+									"sid": 892214679368756
 								}
 							],
 							"actions": [
 								{
 									"id": "set-animation",
 									"objectClass": "jogador",
-									"sid": 963254526024394,
+									"sid": 469148799014988,
 									"parameters": {
 										"animation": "\"idle\"",
 										"from": "beginning"
 									}
 								}
 							],
-							"sid": 761652152528313
+							"sid": 411640897426822
 						}
 					]
 				},
@@ -326,7 +336,7 @@
 						{
 							"id": "on-key-pressed",
 							"objectClass": "Keyboard",
-							"sid": 894647065371708,
+							"sid": 867955927227376,
 							"parameters": {
 								"key": 32
 							}
@@ -336,7 +346,7 @@
 						{
 							"id": "set-animation",
 							"objectClass": "jogador",
-							"sid": 543223875379687,
+							"sid": 546161297251189,
 							"parameters": {
 								"animation": "\"atack\"",
 								"from": "beginning"
@@ -345,7 +355,7 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 863917702251479,
+							"sid": 355070801541027,
 							"parameters": {
 								"audio-file": "Golpe Martelo",
 								"loop": "not-looping",
@@ -355,10 +365,1361 @@
 							}
 						}
 					],
-					"sid": 111569336189109
+					"sid": 340349079796919
 				}
 			],
-			"sid": 912466152288431
+			"sid": 662864953356336
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Inimigos2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "porco_patrulheiro",
+							"sid": 708487269655229,
+							"parameters": {
+								"instance-variable": "direcao",
+								"comparison": 0,
+								"value": "\"Direita\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "porco_patrulheiro",
+							"sid": 372793215979948,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "porco_patrulheiro",
+							"sid": 829162534729232,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 825219266987469
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "porco_patrulheiro",
+							"sid": 833479393352861,
+							"parameters": {
+								"instance-variable": "direcao",
+								"comparison": 0,
+								"value": "\"Esquerda\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "porco_patrulheiro",
+							"sid": 238218188017340,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "porco_patrulheiro",
+							"sid": 783891731719152,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 934697327650808
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "porco_patrulheiro",
+							"sid": 807192195712167,
+							"parameters": {
+								"object": "sensorPatru_esquerda"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "porco_patrulheiro",
+							"sid": 815010205692926,
+							"parameters": {
+								"instance-variable": "direcao",
+								"value": "\"Esquerda\""
+							}
+						}
+					],
+					"sid": 148523395453334
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "porco_patrulheiro",
+							"sid": 644302737475793,
+							"parameters": {
+								"object": "sensorPatru_direita"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "porco_patrulheiro",
+							"sid": 998569096942702,
+							"parameters": {
+								"instance-variable": "direcao",
+								"value": "\"Direita\""
+							}
+						}
+					],
+					"sid": 225244871735368
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "jogador",
+							"sid": 367268156291526,
+							"parameters": {
+								"object": "porco_patrulheiro"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "jogador",
+							"sid": 462626460106561,
+							"parameters": {
+								"animation": "\"atack\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "porco_patrulheiro",
+							"sid": 201754928665405,
+							"parameters": {
+								"animation": "\"die\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "porco_patrulheiro",
+							"sid": 755165661118025,
+							"behaviorType": "Solid",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "porco_patrulheiro",
+							"sid": 933644990522483,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 301673197660439
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "porco_patrulheiro",
+							"sid": 990495237549582,
+							"parameters": {
+								"animation": "\"die\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "flash",
+							"objectClass": "porco_patrulheiro",
+							"sid": 620304626922531,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 527898331106146,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "porco_patrulheiro",
+							"sid": 642198151195833
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 454492176733908,
+							"parameters": {
+								"audio-file": "Dano inimigo",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 362261026680464
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "jogador",
+							"sid": 680762903442045,
+							"parameters": {
+								"object": "porco_patrulheiro"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "jogador",
+							"sid": 116384325636254,
+							"parameters": {
+								"animation": "\"atack\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "porco_patrulheiro",
+							"sid": 408873551231961,
+							"parameters": {
+								"animation": "\"die\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "jogador",
+							"sid": 922227487815227,
+							"parameters": {
+								"animation": "\"hit\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 102023976161134,
+							"parameters": {
+								"variable": "vidas",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 760197314920268,
+							"parameters": {
+								"audio-file": "Dano Jogador",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 120652861754516
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "jogador",
+							"sid": 475232346510098,
+							"parameters": {
+								"animation": "\"hit\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "jogador",
+							"sid": 277731696370075,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 545426986821515
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "jogador",
+							"sid": 109554171009878,
+							"parameters": {
+								"object": "sensorCanhao"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "porco_canhao",
+							"sid": 905692305610049,
+							"parameters": {
+								"animation": "\"pavio\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 598146166104005
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "porco_canhao",
+							"sid": 803891224391466,
+							"parameters": {
+								"animation": "\"pavio\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "canhao",
+							"sid": 895487688879936,
+							"parameters": {
+								"animation": "\"atirando\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "canhao",
+							"sid": 364269551579169,
+							"parameters": {
+								"object": "bala",
+								"layer": "0",
+								"image-point": "1",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 867346856971994
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "bala",
+							"sid": 419879720648011,
+							"parameters": {
+								"object": "jogador"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "jogador",
+							"sid": 314123979082939,
+							"parameters": {
+								"animation": "\"atack\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "jogador",
+							"sid": 282499096869790,
+							"parameters": {
+								"animation": "\"hit\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "bala",
+							"sid": 977035663666100
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 162315282243065,
+							"parameters": {
+								"variable": "vidas",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 924730336567627,
+							"parameters": {
+								"audio-file": "Dano Jogador",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 470840144606786
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "bala",
+							"sid": 968159202331612,
+							"parameters": {
+								"object": "jogador"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "jogador",
+							"sid": 319383242800529,
+							"parameters": {
+								"animation": "\"atack\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "bala",
+							"sid": 109208365535058,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "180"
+							}
+						}
+					],
+					"sid": 988589546242963
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "bala",
+							"sid": 410207414541293,
+							"parameters": {
+								"object": "porco_canhao"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "bala",
+							"sid": 280392520511398
+						},
+						{
+							"id": "flash",
+							"objectClass": "porco_canhao",
+							"sid": 644003942890487,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 700588667926023,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "porco_canhao",
+							"sid": 834094677675580,
+							"parameters": {
+								"object": "Sprite",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "porco_canhao",
+							"sid": 129401311918081
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "black_blackground",
+							"sid": 981224995779223,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jogador_dialogo",
+							"sid": 465975349660367,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "SpriteFont",
+							"sid": 736054753223285,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 127880376700882,
+							"parameters": {
+								"text": "\"Parece que esse porco imundo deixou cair algo\""
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "jogador",
+							"sid": 823774893422720,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 932199090878473,
+							"parameters": {
+								"seconds": "3.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "black_blackground",
+							"sid": 530243252529852,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jogador_dialogo",
+							"sid": 329530029275455,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "SpriteFont",
+							"sid": 350208661698110,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "jogador",
+							"sid": 893282078495587,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 396070704380443,
+							"parameters": {
+								"audio-file": "Dano inimigo",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 499531734459146
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "jogador",
+							"sid": 290062560983882,
+							"parameters": {
+								"object": "Sprite"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 288104384765733,
+							"parameters": {
+								"audio-file": "Item Coletado",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Sprite",
+							"sid": 682879134646561
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "jogador",
+							"sid": 797723809092109,
+							"parameters": {
+								"instance-variable": "chave",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "black_blackground",
+							"sid": 309469115303399,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jogador_dialogo",
+							"sid": 451561991737275,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "SpriteFont",
+							"sid": 149418624531390,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 585721523053181,
+							"parameters": {
+								"text": "\"Deixa eu ver o que essa chave abre\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "itens_hud",
+							"sid": 521155140546804,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 579109205531912,
+							"parameters": {
+								"seconds": "3.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "black_blackground",
+							"sid": 136134055149956,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jogador_dialogo",
+							"sid": 152475315509646,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "SpriteFont",
+							"sid": 895567338287105,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 680664322863882
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "bala",
+							"sid": 768354428240310,
+							"parameters": {
+								"object": "caixa"
+							}
+						},
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "bala",
+							"sid": 665060681089172,
+							"parameters": {
+								"object": "chao"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "bala",
+							"sid": 122448419807160
+						}
+					],
+					"sid": 768111758582690,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "bomba",
+							"sid": 344545703252339,
+							"parameters": {
+								"object": "chefao"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "bomba",
+							"sid": 228848000484576,
+							"parameters": {
+								"animation": "\"explodindo\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "flash",
+							"objectClass": "chefao",
+							"sid": 707179059791769,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 295365795394441,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "chefao",
+							"sid": 449188204004449
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 973753258017800,
+							"parameters": {
+								"audio-file": "Dano inimigo",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 144087808592671
+				}
+			],
+			"sid": 456866865882229
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "jogador",
+					"sid": 460740904964710,
+					"parameters": {
+						"object": "bau"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "jogador",
+					"sid": 895612961631116,
+					"parameters": {
+						"instance-variable": "chave"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "bau",
+					"sid": 749310739772861,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 870585843011393,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "bau",
+					"sid": 991840528440643,
+					"parameters": {
+						"object": "bomba",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "bau",
+					"sid": 302571790353998
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "itens_hud",
+					"sid": 901093928114488,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 990613607610016
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "jogador",
+					"sid": 327922254851488,
+					"parameters": {
+						"object": "bomba"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "itens_hud",
+					"sid": 893141771776034,
+					"parameters": {
+						"animation": "\"chave\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 933234901099014,
+					"parameters": {
+						"audio-file": "Item Coletado",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "bomba",
+					"sid": 738588279126489
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "itens_hud",
+					"sid": 497000864469460,
+					"parameters": {
+						"animation": "\"bomba\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "itens_hud",
+					"sid": 152231916724866,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "jogador",
+					"sid": 775466406012772,
+					"parameters": {
+						"instance-variable": "bomba",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "black_blackground",
+					"sid": 694134995725625,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "jogador_dialogo",
+					"sid": 833314904052624,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpriteFont",
+					"sid": 606093104404345,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SpriteFont",
+					"sid": 860585922560257,
+					"parameters": {
+						"text": "\"Quero ver o porcao me parar agora\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 744761840004333,
+					"parameters": {
+						"seconds": "3.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "black_blackground",
+					"sid": 428707804526902,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "jogador_dialogo",
+					"sid": 356868614071404,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpriteFont",
+					"sid": 436982629531356,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 491443070518025
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "jogador",
+					"sid": 502420863184968,
+					"parameters": {
+						"object": "caixa"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "jogador",
+					"sid": 719370951485231,
+					"parameters": {
+						"animation": "\"atack\""
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "caixa",
+					"sid": 572791528628562,
+					"parameters": {
+						"animation": "\"quebrando\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "caixa",
+					"sid": 230522440744236,
+					"parameters": {
+						"animation": "\"hit\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 547064061212073,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "caixa",
+					"sid": 428459465807300,
+					"parameters": {
+						"animation": "\"quebrando\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "caixa",
+					"sid": 870028866124665,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 590363249274893
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "jogador",
+					"sid": 297601006082436,
+					"parameters": {
+						"object": "chefao"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "jogador",
+					"sid": 247751439091474,
+					"parameters": {
+						"animation": "\"dead\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "chefao",
+					"sid": 861104059603695,
+					"parameters": {
+						"animation": "\"atack\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "jogador",
+					"sid": 243456692308960,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 283800971775125,
+					"parameters": {
+						"seconds": "0.2",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 683329645066167,
+					"parameters": {
+						"audio-file": "Dano Jogador",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "jogador",
+					"sid": 788054898405769,
+					"parameters": {
+						"animation": "\"dead\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "black_blackground",
+					"sid": 293260047985506,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "jogador_dialogo",
+					"sid": 271336747840957,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpriteFont",
+					"sid": 843212948918750,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SpriteFont",
+					"sid": 711357243813309,
+					"parameters": {
+						"text": "\"Droga, esse martelo é muito furrela, preciso de algo mais forte\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "jogador",
+					"sid": 632975846332533,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 708113387346064,
+					"parameters": {
+						"seconds": "3.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "black_blackground",
+					"sid": 860208266674673,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "jogador_dialogo",
+					"sid": 179940541089399,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpriteFont",
+					"sid": 440323776159004,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 435332996054260,
+					"parameters": {
+						"seconds": "2.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 822016820514982
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 884387895363575,
+					"parameters": {
+						"reset-static": false
+					}
+				}
+			],
+			"sid": 774405148015762
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 658689536448829,
+					"parameters": {
+						"key": 67
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "jogador",
+					"sid": 478228133268127,
+					"parameters": {
+						"instance-variable": "bomba"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "jogador",
+					"sid": 904866689169261,
+					"parameters": {
+						"object": "bomba",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "bomba",
+					"sid": 296386405942030,
+					"parameters": {
+						"animation": "\"acessa\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 890065647981749,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 393954361876722,
+					"parameters": {
+						"audio-file": "Explosao Bomba",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "bomba",
+					"sid": 987445332534313,
+					"parameters": {
+						"animation": "\"explodindo\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 844516240660732
 		},
 		{
 			"eventType": "block",
@@ -366,7 +1727,7 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "passarDeFase",
-					"sid": 978362806221363,
+					"sid": 781701374769676,
 					"parameters": {
 						"object": "jogador"
 					}
@@ -376,13 +1737,50 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 617778372188349,
+					"sid": 657064170042007,
 					"parameters": {
 						"layout": "fase2"
 					}
 				}
 			],
-			"sid": 961816336428483
+			"sid": 985006220324328
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "morte",
+					"sid": 444351858020313,
+					"parameters": {
+						"object": "jogador"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 496387676611476,
+					"parameters": {
+						"reset-static": false
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 692023499246645,
+					"parameters": {
+						"layout": "GameOver"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 549878934371538
+				}
+			],
+			"sid": 709549637672300
 		}
 	],
 	"sid": 648768315246555

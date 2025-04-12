@@ -151,7 +151,11 @@
 			"TiledBackground",
 			"nuvem",
 			"tilemap3",
-			"passarDeFase"
+			"passarDeFase",
+			"morte",
+			"btnTryAgain",
+			"btnmenu",
+			"gameoverfont"
 		],
 		"subfolders": []
 	},
@@ -165,7 +169,8 @@
 		"items": [
 			"fase1",
 			"fase2",
-			"menu"
+			"menu",
+			"GameOver"
 		],
 		"subfolders": []
 	},
@@ -173,7 +178,8 @@
 		"items": [
 			"efase2",
 			"emenu",
-			"efase1"
+			"efase1",
+			"eGameover"
 		],
 		"subfolders": []
 	},

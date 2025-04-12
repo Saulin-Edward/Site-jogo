@@ -2,41 +2,7 @@
 	"name": "fase1",
 	"layers": [
 		{
-			"name": "Layer 1",
-			"overriden": 0,
-			"subLayers": [],
-			"instances": [],
-			"sid": 322213446225431,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"isInitiallyInteractive": true,
-			"isHTMLElementsLayer": false,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"drawOrder": "z-order",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
-			"name": "Layer 0",
+			"name": "fase",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
@@ -1213,21 +1179,47 @@
 					}
 				},
 				{
-					"type": "vida_hud",
+					"type": "porco_patrulheiro",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "3",
+						"initial-animation": "run",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 69,
-					"sid": 495740945725153,
+					"uid": 71,
+					"sid": 971339720153046,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"direcao": "Direita"
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 70,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						},
+						"Flash": {
+							"properties": {}
+						}
+					},
 					"instanceFolderItem": {
-						"sid": 495740945725153,
+						"sid": 971339720153046,
 						"expanded": true,
 						"folderName": "",
 						"indexInFolder": -1,
@@ -1236,8 +1228,349 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 38.42201549258763,
-						"y": 21.382935086955797,
+						"x": 385.7767971059007,
+						"y": 109.68135369033592,
+						"width": 21,
+						"height": 17,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sensorPatru_esquerda",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 69,
+					"sid": 512620423214204,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 512620423214204,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 473.0067272287224,
+						"y": 116.88382759699908,
+						"width": 7.027107245413319,
+						"height": 28.04458828070767,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sensorPatru_direita",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 70,
+					"sid": 594665382476002,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 594665382476002,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 266.535888671875,
+						"y": 118.48435974121094,
+						"width": 7.347315733753376,
+						"height": 28.04458828070767,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "porco_patrulheiro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "run",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 72,
+					"sid": 135924456812882,
+					"tags": "",
+					"instanceVariables": {
+						"direcao": "Direita"
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 70,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						},
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 135924456812882,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 848.33544921875,
+						"y": 34.45553207397461,
+						"width": 21,
+						"height": 17,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sensorPatru_esquerda",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 73,
+					"sid": 341508910528003,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 341508910528003,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 923.5612591585037,
+						"y": 52.86186119523745,
+						"width": 7.027107245413319,
+						"height": 28.04458828070767,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sensorPatru_direita",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 74,
+					"sid": 205497282964026,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 205497282964026,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 773.1096825380671,
+						"y": 55.26268127360649,
+						"width": 7.347315733753376,
+						"height": 28.04458828070767,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "morte",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 75,
+					"sid": 927099707288152,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 927099707288152,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1018.5714813204265,
+						"y": 230.52277428521276,
+						"width": 2069.3806750561175,
+						"height": 43.52900029255338,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 556702176220837,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "HUD",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "vida_hud",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "3",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 77,
+					"sid": 752756049410898,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 752756049410898,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 39.77692025308771,
+						"y": 25.33229790718822,
 						"width": 66,
 						"height": 34,
 						"originX": 0.5,
@@ -1261,13 +1594,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 70,
-					"sid": 702801628747196,
+					"uid": 78,
+					"sid": 562265867136073,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 702801628747196,
+						"sid": 562265867136073,
 						"expanded": true,
 						"folderName": "",
 						"indexInFolder": -1,
@@ -1276,9 +1609,9 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 158.4189529247398,
-						"y": 155.83941471483317,
-						"width": 322.38799394925525,
+						"x": 159.7738576852399,
+						"y": 157.95037681683877,
+						"width": 322.3879939492552,
 						"height": 48.203963718100965,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -1301,13 +1634,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 71,
-					"sid": 508762280006586,
+					"uid": 79,
+					"sid": 532211489757734,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 508762280006586,
+						"sid": 532211489757734,
 						"expanded": true,
 						"folderName": "",
 						"indexInFolder": -1,
@@ -1316,8 +1649,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 23.722570761901444,
-						"y": 156.130306466077,
+						"x": 15.0121489177073,
+						"y": 155.5244473534564,
 						"width": 21,
 						"height": 22,
 						"originX": 0.5,
@@ -1351,13 +1684,13 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
-					"uid": 72,
-					"sid": 943464755986031,
+					"uid": 80,
+					"sid": 198991546573841,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 943464755986031,
+						"sid": 198991546573841,
 						"expanded": true,
 						"folderName": "",
 						"indexInFolder": -1,
@@ -1366,8 +1699,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 40.61434089575867,
-						"y": 130.50142145135288,
+						"x": 39.21164457891851,
+						"y": 130.77398283513165,
 						"width": 265.23722028920383,
 						"height": 52.13405688383702,
 						"originX": 0,
@@ -1383,7 +1716,7 @@
 					}
 				}
 			],
-			"sid": 556702176220837,
+			"sid": 322213446225431,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -1400,9 +1733,9 @@
 				0.3686274509803922,
 				1
 			],
-			"isTransparent": false,
-			"parallaxX": 1,
-			"parallaxY": 1,
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
