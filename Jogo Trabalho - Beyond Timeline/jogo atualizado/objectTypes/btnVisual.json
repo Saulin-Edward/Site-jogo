@@ -1,0 +1,60 @@
+{
+	"name": "btnVisual",
+	"plugin-id": "Sprite",
+	"sid": 717798335221911,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1024,
+						"height": 1024,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9426752,
+						"collisionPoly": {
+							"points": [
+								0.1396484375,
+								0.224609375,
+								0.861328125,
+								0.224609375,
+								0.9384765625,
+								0.3037109375,
+								0.9384765625,
+								0.6982421875,
+								0.861328125,
+								0.77734375,
+								0.1396484375,
+								0.77734375,
+								0.0615234375,
+								0.6982421875,
+								0.0615234375,
+								0.3037109375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 818105025167835,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

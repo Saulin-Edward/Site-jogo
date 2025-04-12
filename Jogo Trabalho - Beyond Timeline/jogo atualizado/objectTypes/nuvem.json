@@ -1,0 +1,56 @@
+{
+	"name": "nuvem",
+	"plugin-id": "Sprite",
+	"sid": 793332718988295,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 448,
+						"height": 101,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9193329,
+						"collisionPoly": {
+							"points": [
+								0.18303571428571427,
+								0.801980198019802,
+								0,
+								0.49504950495049505,
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.49504950495049505,
+								0.7522321428571429,
+								0.9900990099009901
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 562169520882780,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

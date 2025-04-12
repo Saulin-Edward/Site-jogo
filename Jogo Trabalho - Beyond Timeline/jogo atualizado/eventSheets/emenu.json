@@ -1,0 +1,27 @@
+{
+	"name": "emenu",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "BTN",
+					"sid": 356325628575569
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 117723972460470,
+					"parameters": {
+						"layout": "fase2"
+					}
+				}
+			],
+			"sid": 353800374939880
+		}
+	],
+	"sid": 868403383021769
+}

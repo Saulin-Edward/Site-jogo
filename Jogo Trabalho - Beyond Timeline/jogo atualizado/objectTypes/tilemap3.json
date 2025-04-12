@@ -1,7 +1,7 @@
 {
-	"name": "tilemap",
+	"name": "tilemap3",
 	"plugin-id": "Tilemap",
-	"sid": 694087818815763,
+	"sid": 587134787873975,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -16,7 +16,7 @@
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 9533128,
+		"imageSpriteId": 4083400,
 		"useCollisionPoly": true,
 		"tag": ""
 	},

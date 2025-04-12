@@ -15,6 +15,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
@@ -31,6 +38,20 @@
 			"type": "plugin",
 			"id": "Spritefont2",
 			"name": "Sprite font",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -119,7 +140,18 @@
 			"Sprite",
 			"bomba",
 			"chefao",
-			"Audio"
+			"Audio",
+			"arteMenu",
+			"Text",
+			"SpriteFont2",
+			"BTN",
+			"LOGO",
+			"btnVisual",
+			"Tilemap2",
+			"TiledBackground",
+			"nuvem",
+			"tilemap3",
+			"passarDeFase"
 		],
 		"subfolders": []
 	},
@@ -131,13 +163,17 @@
 	},
 	"layouts": {
 		"items": [
-			"Jogo"
+			"fase1",
+			"fase2",
+			"menu"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"eJogo"
+			"efase2",
+			"emenu",
+			"efase1"
 		],
 		"subfolders": []
 	},
@@ -366,5 +402,5 @@
 	},
 	"viewportWidth": 320,
 	"viewportHeight": 180,
-	"firstLayout": null
+	"firstLayout": "menu"
 }

@@ -1,0 +1,9 @@
+{
+	"name": "BTN",
+	"plugin-id": "Button",
+	"sid": 748767103871083,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}
