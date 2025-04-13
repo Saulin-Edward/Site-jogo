@@ -155,7 +155,10 @@
 			"morte",
 			"btnTryAgain",
 			"btnmenu",
-			"gameoverfont"
+			"gameoverfont",
+			"TiledBackground2",
+			"SpriteFont3",
+			"btnconcluido"
 		],
 		"subfolders": []
 	},
@@ -170,7 +173,8 @@
 			"fase1",
 			"fase2",
 			"menu",
-			"GameOver"
+			"GameOver",
+			"concluido"
 		],
 		"subfolders": []
 	},
@@ -179,7 +183,8 @@
 			"efase2",
 			"emenu",
 			"efase1",
-			"eGameover"
+			"eGameover",
+			"econcluido"
 		],
 		"subfolders": []
 	},

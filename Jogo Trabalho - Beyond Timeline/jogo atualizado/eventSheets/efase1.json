@@ -1759,6 +1759,27 @@
 			],
 			"actions": [
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 168582330484566,
+					"parameters": {
+						"audio-file": "Perdeu - Morreu",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 429552064383046,
+					"parameters": {
+						"seconds": "2.0",
+						"use-timescale": true
+					}
+				},
+				{
 					"id": "reset-global-variables",
 					"objectClass": "System",
 					"sid": 496387676611476,

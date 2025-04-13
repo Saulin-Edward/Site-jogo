@@ -1,22 +1,22 @@
 {
-	"name": "TiledBackground",
-	"plugin-id": "TiledBg",
-	"sid": 107687572215432,
+	"name": "SpriteFont3",
+	"plugin-id": "Spritefont2",
+	"sid": 648770270700511,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 2304,
-		"height": 1296,
+		"width": 128,
+		"height": 256,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 1742001,
+		"imageSpriteId": 8336172,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

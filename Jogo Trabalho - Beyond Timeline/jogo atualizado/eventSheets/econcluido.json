@@ -1,0 +1,32 @@
+{
+	"name": "econcluido",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "btnconcluido",
+					"sid": 323117621896284
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 807061823769251
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 669359417750091,
+					"parameters": {
+						"layout": "menu"
+					}
+				}
+			],
+			"sid": 118453721372597
+		}
+	],
+	"sid": 418782914052591
+}

@@ -1843,6 +1843,23 @@
 						"animation": "\"Fechando\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 451594283352713,
+					"parameters": {
+						"seconds": "3.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 583634941166362,
+					"parameters": {
+						"layout": "concluido"
+					}
 				}
 			],
 			"sid": 304429376367869
