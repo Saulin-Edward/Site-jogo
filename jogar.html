@@ -20,6 +20,31 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="estilo contato.css">
 
+    <style>
+        @media (max-width: 768px) {
+            iframe {
+                display: none;
+                /* Esconde o iframe em telas menores */
+            }
+        }
+
+        /* Esconde a mensagem em dispositivos desktop */
+        .mobile-message {
+
+            display: none;
+            text-align: center;
+            margin-top: 150px;
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+
+        /* Mostra a mensagem apenas em dispositivos móveis */
+        @media (max-width: 768px) {
+            .mobile-message {
+                display: block;
+            }
+        }
+    </style>
 
     <link rel="shortcut icon" href="galeria/ampulheta_pixel_art.png">
 </head>
@@ -63,11 +88,12 @@
     <main>
         <section class="contato">
             <div class="container">
-
+                <div class="game-container"></div>
                 <iframe src="Jogo Trabalho - Beyond Timeline/Jogo - BT - Final/index.html" frameborder="0"
                     style="margin-top: 100px; width: 900px; height: 490px;"></iframe>
-
-
+                <div class="mobile-message">
+                    Para jogar esse jogo, acesse um dispositivo desktop, como um computador ou notebook.
+                </div>
             </div>
         </section>
         <footer class="footer">
