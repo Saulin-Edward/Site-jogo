@@ -12,6 +12,14 @@
 			],
 			"actions": [
 				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 711513865434672,
+					"parameters": {
+						"reset-static": false
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 325133511165751,

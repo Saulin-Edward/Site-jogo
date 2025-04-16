@@ -1863,6 +1863,39 @@
 				}
 			],
 			"sid": 304429376367869
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "morte",
+					"sid": 369156230105111,
+					"parameters": {
+						"object": "jogador"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 560983724793362,
+					"parameters": {
+						"audio-file": "Perdeu - Morreu",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 613530395212875
+				}
+			],
+			"sid": 376141390114638
 		}
 	],
 	"sid": 959958216613832
