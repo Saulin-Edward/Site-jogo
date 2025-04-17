@@ -29,6 +29,27 @@
 				}
 			],
 			"sid": 353800374939880
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "historia",
+					"sid": 940350796606233
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 695734794699978,
+					"parameters": {
+						"layout": "historia"
+					}
+				}
+			],
+			"sid": 481789430483475
 		}
 	],
 	"sid": 868403383021769

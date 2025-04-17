@@ -162,6 +162,48 @@
 							1
 						]
 					}
+				},
+				{
+					"type": "historia",
+					"properties": {
+						"type": "button",
+						"text": "HISTORIA",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": "",
+						"class": ""
+					},
+					"uid": 104,
+					"sid": 162594827238532,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 162594827238532,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 272.12584860475715,
+						"y": 161.22796892428164,
+						"width": 42.42730930925546,
+						"height": 13.156680080060369,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
 				}
 			],
 			"sid": 109314990654160,

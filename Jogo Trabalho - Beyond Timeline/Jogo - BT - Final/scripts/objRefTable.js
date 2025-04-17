@@ -111,6 +111,10 @@ self.C3_JsPropNameTable = [
 	{TiledBackground2: 0},
 	{SpriteFont3: 0},
 	{btnconcluido: 0},
+	{Sprite3: 0},
+	{voltar: 0},
+	{SpriteFont4: 0},
+	{historia: 0},
 	{vidas: 0},
 	{vidas2: 0}
 ];
@@ -159,5 +163,9 @@ self.InstanceType = {
 	gameoverfont: class extends self.ISpriteFontInstance {},
 	TiledBackground2: class extends self.ITiledBackgroundInstance {},
 	SpriteFont3: class extends self.ISpriteFontInstance {},
-	btnconcluido: class extends self.IButtonInstance {}
+	btnconcluido: class extends self.IButtonInstance {},
+	Sprite3: class extends self.ISpriteInstance {},
+	voltar: class extends self.IButtonInstance {},
+	SpriteFont4: class extends self.ISpriteFontInstance {},
+	historia: class extends self.IButtonInstance {}
 }

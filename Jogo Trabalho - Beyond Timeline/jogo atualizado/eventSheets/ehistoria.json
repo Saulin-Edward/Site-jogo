@@ -1,0 +1,27 @@
+{
+	"name": "ehistoria",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "voltar",
+					"sid": 459077443822838
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 926960878779367,
+					"parameters": {
+						"layout": "menu"
+					}
+				}
+			],
+			"sid": 465559557180402
+		}
+	],
+	"sid": 433731260962471
+}

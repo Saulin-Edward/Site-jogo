@@ -158,7 +158,11 @@
 			"gameoverfont",
 			"TiledBackground2",
 			"SpriteFont3",
-			"btnconcluido"
+			"btnconcluido",
+			"Sprite3",
+			"voltar",
+			"SpriteFont4",
+			"historia"
 		],
 		"subfolders": []
 	},
@@ -174,7 +178,8 @@
 			"fase2",
 			"menu",
 			"GameOver",
-			"concluido"
+			"concluido",
+			"historia"
 		],
 		"subfolders": []
 	},
@@ -184,7 +189,8 @@
 			"emenu",
 			"efase1",
 			"eGameover",
-			"econcluido"
+			"econcluido",
+			"ehistoria"
 		],
 		"subfolders": []
 	},
